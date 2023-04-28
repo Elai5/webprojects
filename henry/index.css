@@ -1,0 +1,96 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  background-color: rgb(167, 167, 184);
+}
+/* nav {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+} */
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+.logo {
+  color: orangered;
+  font-size: 30px;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+ul {
+  width: 400px;
+  float: left;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+navbar :right {
+  float: left;
+}
+.nav {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/* .logo {
+  color: orangered;
+  font-size: 28px;
+} */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: rgb(16, 17, 17);
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: orangered;
+}
+.right{
+  /* background-color: white; */
+  width: 100%;
+  height: auto;
+}.width{
+  background-color: yellow;
+  width:900px;
+  height: 800px;
+
+}
+.home-left main{
+  width: 50%;
+  height: 60vh;
+  background: navy;
+}
+.home-left{
+  width: 400px;
+  height: auto;
+}
+.image img{
+  float:right; 
+  right: 0px;
+  /* height: 400px; */
+  height: auto;
+  width: 34%;
+  z-index: -1;
+  background-color: aqua;
+}
