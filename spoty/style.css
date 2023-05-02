@@ -11,7 +11,7 @@
 
 }
 .sidebar{
-    height: 80vh;
+    height: 90vh;
     width: 250px;
     background-color:black;
     /* justify-content: center; */
@@ -33,10 +33,7 @@
     border: 4px blue;
 }
 .icons{
-    border: 2px solid red;
-    /* justify-content: center; */
     margin: 15px 20px;
-    /* display: flex; */
 }
 .icons a{
     display: flex;
@@ -48,8 +45,6 @@
     line-height: 20px;
     color: rgba(255, 255, 255, 0.64);
     text-transform: capitalize;
-
-
 }
 .icons a:hover{
     color: white;
@@ -57,11 +52,43 @@
 li a.active{
 color: white;
 }
+.extra{
+    /* border: 2px solid blue; */
+    height: 30vh;
+    width: 220px;
+    margin: 18px 20px;
+    margin-top: 170px;
+    align-items: center;
+    bottom: 0;
+}
+.text,p{
+   color: rgba(255, 255, 255, 0.649);
+   align-items: center;
+   padding:  5px;
+   line-height: 32px;
+   /* font-size: 15px; */
+   display: inline-block;
+   text-transform: capitalize;
+
+}
+.btn{
+    padding: 0px 15px;
+    margin:  16px 35px;
+    /* width: 70px; */
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.522);
+}
+.btn i{
+    padding: 7px;
+}
+
 .box{
     float: left;
     /* top: 0; */
     /* position:relative; */
-    width: 86.4%;
+    width: 80%;
     height: 80vh;
     background-color: yellow;
 }
