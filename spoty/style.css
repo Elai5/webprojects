@@ -20,7 +20,7 @@
     color: white;
 }
 .logo{
-    border: solid 2px white;
+    /* border: solid 2px white; */
     padding: 4px;
     display: flex;
     align-items: center;
@@ -84,30 +84,81 @@ color: white;
     padding: 7px;
 }
 
-.box{
-    float: left;
-    /* top: 0; */
-    /* position:relative; */
-    width: 80%;
-    height: 80vh;
-    background-color: yellow;
+.context{
+    background: wheat;
+    height: 90vh;
 }
-.navbar{
-    margin-left: 200px;
-    width: 86.4%;
-    height: 40px;
-    /* float: right; */
-    position: absolute;
-    top: 0;
-    background-color: rgb(55, 45, 45);
+.context .navbar{
+    background: rgb(30, 29, 29);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}.arrow{
+    padding-left: 70px;
+    gap: 30px;
+    /* padding: 2px 36px; */
+    /* background: red; */
+    display: flex;
+    width: 200px;
+    font-size: 23px;
+
 }
-.footer{
+.arrow i:hover{
+    color: white;
+    cursor: pointer;
+}
+.navbar i{
+    /* padding: 3px; */
+    /* border: 2px solid gold; */
+    /* justify-content: space-between; */
+    color: rgba(255, 255, 255, 0.649);
+    /* margin: 3px; */
+
+}
+.menu{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    float: right;
+    margin-top: -27px;
+    color: rgba(255, 255, 255, 0.522);
+    gap: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.menu :hover{
+    color: white;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.522);
+    height: 30px;
+}
+.btn1 button{
+    padding: 8px 18px;
+    border-radius: 25px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.522);
+    border: none;
+    font-weight: bold;
+}
+button:hover{
+    border: 2px solid white;
+}
+.btn1 .active{
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+/* .footer{ */
     /* margin-left: 200px; */
-    width: 100%;
+    /* width: 100%;
     height: 40px;
-    clear: both;
+    clear: both; */
     /* float: right; */
     /* position: absolute; */
     /* top: 0; */
-    background-color: red;
-}
+    /* background-color: red; */
+/* } */
