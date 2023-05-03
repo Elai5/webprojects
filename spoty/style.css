@@ -28,6 +28,7 @@
 .logo img{
     /* display: flex; */
     float: left;
+    /* filter: grayscale(20); */
 
 }.logo h3{
     border: 4px blue;
@@ -52,6 +53,13 @@
 li a.active{
 color: white;
 }
+li .bim{
+    color: blue cover;
+    background: linear-gradient(to right, red, white);
+    outline: none;
+
+}
+
 .extra{
     /* border: 2px solid blue; */
     height: 30vh;
@@ -69,7 +77,11 @@ color: white;
    /* font-size: 15px; */
    display: inline-block;
    text-transform: capitalize;
-
+}
+.text p:hover{
+    color: white;
+    cursor: pointer;
+    /* box-shadow: 10px 2px lightblue; */
 }
 .btn{
     padding: 0px 15px;
@@ -154,6 +166,14 @@ button:hover{
     color: black;
     font-weight: bold;
 }
+
+.main{
+    /* background: red; */
+    height: 90vh;
+    color: #000;
+    display:flex;
+    flex-wrap: wrap;
+}
 .playlist{
     /* color: white; */
     margin: 20px 15px;
@@ -162,29 +182,46 @@ button:hover{
     /* border: 2px solid white; */
     
 }
-.playlist h4{
+.header{
+    text-transform: capitalize;
+    /* background: gold; */
+    width: 100%;
+    padding: 17px;
+    /* display: inline; */
+    /* margin-right: 30px; */
     font-size: 22px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     /* margin-right: 20px; */
     color: whitesmoke;
 }
-.main{
-    /* background: red; */
-    height: 90vh;
-    color: #000;
+.header h4{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 22px;
 }
 .row{
+    /* background: red; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* gap: 4px; */
+    /* flex-direction: column; */
+    width: 100%;
+    align-items: center;
+    /* padding-left: -195px; */
     /* padding: 10px 4px; */
-    gap: 20px;
+    /* gap: 20px; */
 
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 40px;
     width: 200px;
     height: 260px;
     /* border: 2px solid black; */
-    padding: 10px;
+    /* padding: 10px; */
     float: left;
     background: #0000001e;
     color: rgba(255, 255, 255, 0.522);
@@ -208,7 +245,10 @@ h5{
     line-height: 20px;
     text-transform: none;
 }
-
+.boxes{
+    background: red;
+    width: 100%;
+}
 .footer{
     /* margin-left: 200px;  */
     width: 100%;
@@ -218,7 +258,9 @@ h5{
     /* height: 10vh; */
     bottom: 0;
     color: white;
-    background:linear-gradient(to right, #ff4d94 10%,#ff33cc 40%,#751aff 70%, #6666ff 150%);
+    background: rgb(144,18,121);
+background: linear-gradient(90deg, rgba(144,18,121,1) 24%, rgba(87,60,255,1) 80%, rgba(29,104,209,1) 88%, rgba(0,171,255,1) 94%);
+    /* background:linear-gradient(to right, #ff4d94 10%,#ff33cc 40%,#751aff 70%, #6666ff 150%); */
 }
 .tex{
     margin: 0 15px;
