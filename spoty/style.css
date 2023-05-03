@@ -91,7 +91,7 @@ li .bim{
 }
 .btn{
     padding: 0px 15px;
-    margin:  16px 35px;
+    /* margin:  2px 45px; */
     /* width: 70px; */
     border-radius: 25px;
     background: transparent;
@@ -267,20 +267,20 @@ button:hover{
     border-radius:5%;
     /* border: 2px solid white; */
 }
-.play{
-position: relative;
-}
-.play .fa{
-    position: absolute;
+.card .image img.play{
+    font-size: 14px;
+    color: #1db954;
     right: 10px;
     top: -60px;
     padding: 18px;
     background: #1db954;
     border-radius: 100%;
-    opacity:0;
-    transition: all ease 0.4s;
+    /* opacity:0; */
+    /* transition: all ease 0.4s; */
+position: relative;
 }
-.play .fa{
+
+.play:hover{
     opacity: 1;
     transform: translateY(-20px);
 }
