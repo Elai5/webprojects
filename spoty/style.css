@@ -155,13 +155,18 @@ button:hover{
     font-weight: bold;
 }
 .playlist{
-    color: white;
-    /* font-size: 22px; */
+    /* color: white; */
+    margin: 20px 15px;
     text-transform: capitalize;
+    /* background: red; */
+    /* border: 2px solid white; */
+    
 }
 .playlist h4{
     font-size: 22px;
+    margin-left: 20px;
     /* margin-right: 20px; */
+    color: whitesmoke;
 }
 .main{
     /* background: red; */
@@ -178,10 +183,10 @@ button:hover{
     margin-top: 40px;
     width: 200px;
     height: 260px;
-    border: 2px solid black;
-    padding: 7px;
+    /* border: 2px solid black; */
+    padding: 10px;
     float: left;
-    background: #000000b1;
+    background: #0000001e;
     color: rgba(255, 255, 255, 0.522);
 }
 .image img{
@@ -195,11 +200,13 @@ button:hover{
     color: white;
     margin-left: 6px;
 }
-.desc h4, p{
-    font-size: 15px;
+h5{
+    font-size: 18px;
+    
 }
 .card p{
     line-height: 20px;
+    text-transform: none;
 }
 
 .footer{
