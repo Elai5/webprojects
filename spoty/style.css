@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -114,10 +115,6 @@ li .bim{
     margin-left: 180px;
     background: rgba(8, 7, 7, 0.815);
     padding: 20px;
-    /* margin-bottom: 120px; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    
 }.arrow{
     padding-left: 70px;
     gap: 30px;
@@ -192,12 +189,8 @@ button:hover{
     /* padding: 20px 40px; */
 }
 .playlist{
-    /* color: white; */
     margin: 20px 15px;
     text-transform: capitalize;
-    /* background: red; */
-    /* border: 2px solid white; */
-    
 }
 .header{
     text-transform: capitalize;
@@ -222,22 +215,20 @@ button:hover{
     margin-left: 20px;
     font-size: 22px;
     color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.header a h4:hover{
+    text-decoration: underline;
 }
 .row{
     /* background: red; */
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    /* justify-content: space-between; */
-    /* gap: 4px; */
-    /* flex-direction: column; */
     width: 100%;
     align-items: center;
     margin: 0 22px
-    /* padding-left: -195px; */
-    /* padding: 10px 4px; */
-    /* gap: 20px; */
-
+   
 }
 .card{
     display: flex;
@@ -245,20 +236,20 @@ button:hover{
     flex-wrap: wrap;
     margin-top: 40px;
     width: 200px;
-    height: 260px;
-    /* border: 2px solid black; */
-    /* padding: 10px; */
+    height: 270px;
+    border-radius: 5%;
+    padding: 4px 10px;
     float: left;
     background: #0000001e;
     color: rgba(255, 255, 255, 0.522);
 }
 .card:hover{
     cursor: pointer;
-    opacity: 1;
+    /* opacity: 1; */
     transition: .3s ease;
-    /* transform: scale(12px 3px); */
-  background-color: red;
-
+    background-color: rgba(255, 255, 255, 0.048);
+  /* box-shadow:0 0 3px #1db954; */
+  
 }
 .image img{
     width:100%;
@@ -267,20 +258,19 @@ button:hover{
     border-radius:5%;
     /* border: 2px solid white; */
 }
-.card .image img.play{
-    font-size: 14px;
+.play{
+    /* font-size: 24px; */
     color: #1db954;
     right: 10px;
     top: -60px;
-    padding: 18px;
-    background: #1db954;
-    border-radius: 100%;
-    /* opacity:0; */
-    /* transition: all ease 0.4s; */
-position: relative;
+    /* padding: 18px; */
+    /* background: #1db954; */
+    /* border-radius: 100%; */
+    opacity:0;
+    transition: all ease 0.4s;
+    /* position: relative; */
 }
-
-.play:hover{
+.row .card .play:hover{
     opacity: 1;
     transform: translateY(-20px);
 }
@@ -306,8 +296,8 @@ h5{
     /* height: 10vh; */
     bottom: 0;
     color: white;
-    /* background: rgb(144,18,121); */
-    background: linear-gradient(90deg, rgba(144,18,121,1) 24%, rgba(87,60,255,1) 80%, rgba(29,104,209,1) 88%, rgba(0,171,255,1) 94%);
+    background:linear-gradient(to right,pink ,purple,blue, pink);
+    /* background: linear-gradient(90deg, rgba(144,18,121,1) 24%, rgba(87,60,255,1) 80%, rgba(29,104,209,1) 88%, rgba(0,171,255,1) 94%); */
     /* background:linear-gradient(to right, #ff4d94 10%,#ff33cc 40%,#751aff 70%, #6666ff 150%); */
 }
 .tex{
