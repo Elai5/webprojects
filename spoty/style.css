@@ -15,9 +15,22 @@ body {
 .container {
     height: 100vh;
     width: 100%;
+    display: flex;
+    /* overflow: hidden; */
 }
 
 .sidebar {
+    width: 250px;
+    background-color: black;
+    color: white;
+    overflow-y: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+
+    /* 
     position: fixed;
     z-index: 1;
     height: 100vh;
@@ -25,20 +38,30 @@ body {
     background-color: black;
     float: left;
     color: white;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    overflow-y: auto; */
 }
 
 .logo {
-    padding: 4px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    float: left;
+    /* float: left; */
+
+    margin-right: 10px;
 }
 
 .logo h3 {
     border: 4px blue;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 .icons {
@@ -51,14 +74,16 @@ body {
     padding: 10px;
     align-items: center;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 1.6;
     color: rgba(255, 255, 255, 0.64);
     text-transform: capitalize;
+    transition: color 0.3s ease;
+    color: white;
 }
 
 .icons a:hover {
-    color: white;
+    color: grey;
 }
 
 li a.active {
@@ -66,9 +91,10 @@ li a.active {
 }
 
 li .bim {
-    color: blue cover;
+    /* color: blue; */
     background: linear-gradient(to right, red, white);
     outline: none;
+    padding: 10px;
 }
 
 .extra {
@@ -78,6 +104,7 @@ li .bim {
     margin-top: 170px;
     align-items: center;
     bottom: 0;
+    position: absolute;
 }
 
 .text,
@@ -88,6 +115,7 @@ p {
     line-height: 32px;
     display: inline-block;
     text-transform: capitalize;
+    /* color: white; */
 }
 
 .text p:hover {
@@ -111,29 +139,38 @@ p {
     cursor: pointer;
 }
 
+
+
+
+
+
 .context {
     background: rgb(30, 29, 29);
     height: 100vh;
     color: white;
+    margin-left: 250px;
 }
 
 .context .navbar {
-    width: 88%;
+    /* width: fit-content; */
+    width: calc(100% - 250px);
     position: fixed;
-    margin-left: 180px;
+    /* margin-left: 250px; */
     background: rgba(8, 7, 7, 0.815);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    top: 0;
+    z-index: 1000;
 }
 
 .arrow {
-    padding-left: 70px;
+    padding-left: 20px;
     gap: 30px;
     display: flex;
-    width: 200px;
+    width: auto;
     font-size: 23px;
 }
 
@@ -151,7 +188,7 @@ p {
     align-items: center;
     float: right;
     color: rgba(255, 255, 255, 0.522);
-    gap: 10px;
+    gap: 20px;
     font-size: 18px;
     text-transform: capitalize;
     cursor: pointer;
@@ -168,6 +205,7 @@ p {
 hr {
     border: 1px solid rgba(255, 255, 255, 0.522);
     height: 30px;
+    margin: 0 10px;
 }
 
 .btn1 button {
@@ -177,14 +215,16 @@ hr {
     color: rgba(255, 255, 255, 0.522);
     border: none;
     font-weight: bold;
+    background-color: #1db954;
+    color: black;
 }
 
-/* button:hover {
-    border: 2px solid white;
-} */
 .btn1 button:hover {
     background-color: #1db954;
     color: black;
+    background: transparent;
+    color: white;
+    border: 0.4px solid white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -197,13 +237,17 @@ hr {
 
 .main {
     float: left;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     margin-top: 70px;
-    height: 100vh;
+    height: auto;
+    overflow-y: auto;
     overflow: scroll;
     color: #000;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
 }
 
 .playlist {
@@ -240,42 +284,54 @@ hr {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
+    justify-content: space-between;
     width: 100%;
-    align-items: center;
-    margin: 0 22px
+    /* background-color: red; */
+    padding: 0 30px;
+
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    width: 230px;
-    height: 310px;
-    border-radius: 5%;
-    padding: 4px 10px;
-    /* padding: 20px; */
-    float: left;
-    background: #0000001e;
+    flex: 1 1 calc(20% - 20px);
+    min-width: 180px;
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #0000001e;
     color: rgba(255, 255, 255, 0.522);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    cursor: pointer;
-    transition: .3s ease;
-    background-color: rgba(255, 255, 255, 0.048);
-}
 
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: 1px solid grey;
 }
 
 .image img {
     width: 100%;
-    height: 20vh;
-    border-radius: 5%;
+    height: auto;
+    display: block;
+
+}
+
+.card h5.desc {
+    margin: 10px 5px;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+
+.card p {
+    line-height: 1.4;
+    /* margin: 0 10px 10px; */
+    text-transform: none;
+    font-size: 18px;
 }
 
 .play {
@@ -291,20 +347,9 @@ hr {
     transform: translateY(-20px);
 }
 
-.desc {
-    color: white;
-    margin-left: 6px;
-}
 
-h5 {
-    font-size: 18px;
 
-}
 
-.card p {
-    line-height: 20px;
-    text-transform: none;
-}
 
 .footer {
     width: 100%;
@@ -312,6 +357,7 @@ h5 {
     position: fixed;
     bottom: 0;
     color: white;
+    /* height: 20px; */
     background: linear-gradient(90deg, rgba(144, 18, 121, 1) 24%, rgba(87, 60, 255, 1) 80%, rgba(29, 104, 209, 1) 88%, rgba(0, 171, 255, 1) 94%);
 }
 
@@ -350,15 +396,4 @@ h5 {
 .btn2 button:hover {
     background: transparent;
     color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .menu {
-        float: none;
-        text-align: center;
-    }
 }
